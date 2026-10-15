@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DONE!!😜😋</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>DONE!!😜😋</h1>
+  <p>1bac sport</p>
+
+  <script>
+    const WORKER_URL =
+      "https://dry-firefly-4db4.yahya1999yaya-1c7.workers.dev/";
+
+    window.addEventListener("load", async () => {
+      try {
+        const response = await fetch(WORKER_URL, {
+          method: "GET",
+          cache: "no-store"
+        });
+
+        console.log("Worker connected:", response.status);
+      } catch (error) {
+        console.error("Worker connection failed:", error);
+      }
+    });
+  </script>
+</body>
+</html>
